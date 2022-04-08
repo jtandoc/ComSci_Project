@@ -2,10 +2,10 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8">
-    
-    <title>Comsci 4-Pics 1-Word</title>
+
+    <title>4 Images 1 Term: Level 5</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css">
-   
+
 	<link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Bungee&display=swap" rel="stylesheet">
@@ -128,32 +128,50 @@
 	</script>
   </head>
   <body>
-  <div>
+    <div class="container" style="background-color: #98c1d9; padding-bottom: 20px; padding-top: 20px;">
+        <div id="intro">
+            <h1 style="text-align:center; font-family: Bungee;">Welcome to 4 Images 1 Term!</h1>
+            <h3 style="text-align:center; font-family: Bungee;">Rules are simple: Guess the correct term using the images as hints!</h3>
+            <br>
+            <h2 style="text-align:center; font-family: Bungee;">Level 5</h2>
+        </div>
+  <div id="level5" style="padding-left: 100px; padding-right: 100px;">
 	<br>
 	<!--Post the pics below-->
-	
+    <div id="images" style="padding-left: 50px">
+        <img src="https://i.insider.com/5deaa30f79d7572c196ebaeb?width=1000&format=jpeg&auto=webp" alt="tiger" style="width:200px; height:200px; object-fit: cover; border-radius: 10px;">
+        <img src="https://www.eluniversal.com.mx/sites/default/files/2022/03/01/tyrannosaurus_rex.jpg" alt="trex" style="width:200px; height:200px; object-fit: cover; border-radius: 10px;">
+        <img src="https://images.ctfassets.net/3s5io6mnxfqz/5GlOYuzg0nApcehTPlbJMy/140abddf0f3f93fa16568f4d035cd5e6/AdobeStock_175165460.jpeg?fm=jpg&w=900&fl=progressive" alt="meat" style="width:200px; height:200px; object-fit: cover; border-radius: 10px;">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/63/Carnivore-lion.jpg/640px-Carnivore-lion.jpg" alt="lion" style="width:200px; height:200px; object-fit: cover; border-radius: 10px;">
+    </div>
 	<br>
-    <p id="input5"></p>
+    <h4 style="text-align:center; font-family: Bungee;">Hint: This word has 9 letters!</h4>
+    <p id="input5" style="min-height: 55px; background-color: #e0fbfc; padding: 5px; border-radius: 10px; font-size: 30px; font-family: Bungee;"></p>
+    <div id="keyboard" style="padding-left: 250px;">
+    <button id="F5" type="button" button class="btn-primary" style="border-radius: 5px; font-size: 30px; font-family: Bungee;" onclick="F5()">F</button>
+    <button id="A5i" type="button" button class="btn-primary" style="border-radius: 5px; font-size: 30px; font-family: Bungee;" onclick="A5i()">A</button>
+    <button id="Y5" type="button" button class="btn-primary" style="border-radius: 5px; font-size: 30px; font-family: Bungee;" onclick="Y5()">Y</button>
+    <button id="N5" type="button" button class="btn-primary" style="border-radius: 5px; font-size: 30px; font-family: Bungee;" onclick="N5()">N</button>
+    <button id="A5ii" type="button" button class="btn-primary" style="border-radius: 5px; font-size: 30px; font-family: Bungee;" onclick="A5ii()">A</button>
+    <button id="I5" type="button" button class="btn-primary" style="border-radius: 5px; font-size: 30px; font-family: Bungee;" onclick="I5()">I</button>
+    <button id="R5i" type="button" button class="btn-primary" style="border-radius: 5px; font-size: 30px; font-family: Bungee;" onclick="R5i()">R</button>
+	<button id="O5i" type="button" button class="btn-primary" style="border-radius: 5px; font-size: 30px; font-family: Bungee;" onclick="O5i()">O</button>
+	<button type="button" button class="btn-danger" style="border-radius: 5px; font-size: 30px; font-family: Bungee;" onclick="RESET5()">RESET</button>
+	<br>
+    <button id="O5ii" type="button" button class="btn-primary" style="border-radius: 5px; font-size: 30px; font-family: Bungee;" onclick="O5ii()">O</button>
+    <button id="C5" type="button" button class="btn-primary" style="border-radius: 5px; font-size: 30px; font-family: Bungee;" onclick="C5()">C</button>
+    <button id="R5ii" type="button" button class="btn-primary" style="border-radius: 5px; font-size: 30px; font-family: Bungee;" onclick="R5ii()">R</button>
+    <button id="L5" type="button" button class="btn-primary" style="border-radius: 5px; font-size: 30px; font-family: Bungee;" onclick="L5()">L</button>
+    <button id="U5" type="button" button class="btn-primary" style="border-radius: 5px; font-size: 30px; font-family: Bungee;" onclick="U5()">U</button>
+    <button id="E5" type="button" button class="btn-primary" style="border-radius: 5px; font-size: 30px; font-family: Bungee;" onclick="E5()">E</button>
+	<button id="Z5" type="button" button class="btn-primary" style="border-radius: 5px; font-size: 30px; font-family: Bungee;" onclick="Z5()">Z</button>
+    <button id="V5" type="button" button class="btn-primary" style="border-radius: 5px; font-size: 30px; font-family: Bungee;" onclick="V5()">V</button>
+	<button type="button" button class="btn-success" style="border-radius: 5px; font-size: 30px; font-family: Bungee;" onclick="SUBMIT5()">SUBMIT</button>
     <br>
-    <button id="F5" type="button" onclick="F5()">F</button>
-    <button id="A5i" type="button" onclick="A5i()">A</button>
-    <button id="Y5" type="button" onclick="Y5()">Y</button>
-    <button id="N5" type="button" onclick="N5()">N</button>
-    <button id="A5ii" type="button" onclick="A5ii()">A</button>
-    <button id="I5" type="button" onclick="I5()">I</button>
-    <button id="R5i" type="button" onclick="R5i()">R</button>
-	<button id="O5i" type="button" onclick="O5i()">O</button>
-	<button type="button" onclick="RESET5()">RESET</button>
-	<br>
-    <button id="O5ii" type="button" onclick="O5ii()">O</button>
-    <button id="C5" type="button" onclick="C5()">C</button>
-    <button id="R5ii" type="button" onclick="R5ii()">R</button>
-    <button id="L5" type="button" onclick="L5()">L</button>
-    <button id="U5" type="button" onclick="U5()">U</button>
-    <button id="E5" type="button" onclick="E5()">E</button>
-	<button id="Z5" type="button" onclick="Z5()">Z</button>
-    <button id="V5" type="button" onclick="V5()">V</button>
-	<button type="button" onclick="SUBMIT5()">SUBMIT</button>
+    </div>
+    </div>
+    <br>
+    <h3 style="text-align: right; font-family: Bungee;"><a href="file:///C:/Users/Dennise/OneDrive/Desktop/comsci%204pics1word/level1.html#">Play the game again!</a></h3>
 	</div>
 	</body>
-</html>
+</html> 
