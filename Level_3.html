@@ -2,10 +2,10 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8">
-    
-    <title>Comsci 4-Pics 1-Word</title>
+
+    <title>4 Images 1 Term: Level 3</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css">
-   
+
 	<link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Bungee&display=swap" rel="stylesheet">
@@ -128,32 +128,49 @@
 	</script>
   </head>
   <body>
-  <div>
+    <div class="container" style="background-color: #98c1d9; padding-bottom: 20px; padding-top: 20px;">
+        <div id="intro">
+            <h1 style="text-align:center; font-family: Bungee;">Welcome to 4 Images 1 Term!</h1>
+            <h3 style="text-align:center; font-family: Bungee;">Rules are simple: Guess the correct term using the images as hints!</h3>
+            <br>
+            <h2 style="text-align:center; font-family: Bungee;">Level 3</h2>
+        </div>
+  <div id="level3" style="padding-left: 100px; padding-right: 100px;">
 	<br>
-	<!--Post the pics below-->
-	
-	<br>
-    <p id="input3"></p>
+    <!--Post the pics below-->
+    <div id="images" style="padding-left: 50px">
+    <img src="https://www.history.com/.image/ar_1:1%2Cc_fill%2Ccs_srgb%2Cfl_progressive%2Cq_auto:good%2Cw_1200/MTU3ODc5MDgzMjEwMTg4NTEx/alexander_the_great_by_tamarie-d57sirl.jpg" alt="alexander the great" style="width:200px; height:200px; object-fit: cover; border-radius: 10px;">
+	<img src="https://cdn.britannica.com/60/176360-050-33D949F8/oil-Catherine-II-canvas-collection-Richard-Brompton-1782.jpg?w=400&h=300&c=crop" alt="catherine the great" style="width:200px; height:200px; object-fit: cover; border-radius: 10px;">
+	<img src="https://www.indiewire.com/wp-content/uploads/2016/08/20140216-131646.jpg" alt="the great gatsby" style="width:200px; height:200px; object-fit: cover; border-radius: 10px;">
+	<img src="https://assets.vogue.com/photos/598de5ef068a3216afff9d06/16:9/w_2991,h_1682,c_limit/01-the-greatest-showman-hugh-jackman-vogue-september-issue-2017.jpg" alt="the greatest showman" style="width:200px; height:200px; object-fit: cover; border-radius: 10px;">
+    </div>
     <br>
-    <button id="T3" type="button" onclick="T3()">T</button>
-    <button id="B3" type="button" onclick="B3()">B</button>
-    <button id="R3i" type="button" onclick="R3i()">R</button>
-    <button id="A3" type="button" onclick="A3()">A</button>
-    <button id="S3i" type="button" onclick="S3i()">S</button>
-    <button id="Q3i" type="button" onclick="Q3i()">Q</button>
-    <button id="O3" type="button" onclick="O3()">O</button>
-	<button id="H3" type="button" onclick="H3()">H</button>
-	<button type="button" onclick="RESET3()">RESET</button>
+    <h4 style="text-align:center; font-family: Bungee;">Hint: This word has 5 letters!</h4>
+    <p id="input3" style="min-height: 55px; background-color: #e0fbfc; padding: 5px; border-radius: 10px; font-size: 30px; font-family: Bungee;"></p>
+    <div id="keyboard" style="padding-left: 250px;">
+    <button id="T3" type="button" button class="btn-primary" style="border-radius: 5px; font-size: 30px; font-family: Bungee;" onclick="T3()">T</button>
+    <button id="B3" type="button" button class="btn-primary" style="border-radius: 5px; font-size: 30px; font-family: Bungee;" onclick="B3()">B</button>
+    <button id="R3i" type="button" button class="btn-primary" style="border-radius: 5px; font-size: 30px; font-family: Bungee;" onclick="R3i()">R</button>
+    <button id="A3" type="button" button class="btn-primary" style="border-radius: 5px; font-size: 30px; font-family: Bungee;" onclick="A3()">A</button>
+    <button id="S3i" type="button" button class="btn-primary" style="border-radius: 5px; font-size: 30px; font-family: Bungee;" onclick="S3i()">S</button>
+    <button id="Q3i" type="button" button class="btn-primary" style="border-radius: 5px; font-size: 30px; font-family: Bungee;" onclick="Q3i()">Q</button>
+    <button id="O3" type="button" button class="btn-primary" style="border-radius: 5px; font-size: 30px; font-family: Bungee;" onclick="O3()">O</button>
+	<button id="H3" type="button" button class="btn-primary" style="border-radius: 5px; font-size: 30px; font-family: Bungee;" onclick="H3()">H</button>
+	<button type="button" button class="btn-danger" style="border-radius: 5px; font-size: 30px; font-family: Bungee;" onclick="RESET3()">RESET</button>
 	<br>
-    <button id="E3" type="button" onclick="E3()">E</button>
-    <button id="R3ii" type="button" onclick="R3ii()">R</button>
-    <button id="G3i" type="button" onclick="G3i()">G</button>
-    <button id="S3ii" type="button" onclick="S3ii()">S</button>
-    <button id="Q3ii" type="button" onclick="Q3ii()">Q</button>
-    <button id="U3" type="button" onclick="U3()">U</button>
-	<button id="G3ii" type="button" onclick="G3ii()">G</button>
-    <button id="I3" type="button" onclick="I3()">I</button>
-	<button type="button" onclick="SUBMIT3()">SUBMIT</button>
+    <button id="E3" type="button" button class="btn-primary" style="border-radius: 5px; font-size: 30px; font-family: Bungee;" onclick="E3()">E</button>
+    <button id="R3ii" type="button" button class="btn-primary" style="border-radius: 5px; font-size: 30px; font-family: Bungee;" onclick="R3ii()">R</button>
+    <button id="G3i" type="button" button class="btn-primary" style="border-radius: 5px; font-size: 30px; font-family: Bungee;" onclick="G3i()">G</button>
+    <button id="S3ii" type="button" button class="btn-primary" style="border-radius: 5px; font-size: 30px; font-family: Bungee;" onclick="S3ii()">S</button>
+    <button id="Q3ii" type="button" button class="btn-primary" style="border-radius: 5px; font-size: 30px; font-family: Bungee;" onclick="Q3ii()">Q</button>
+    <button id="U3" type="button" button class="btn-primary" style="border-radius: 5px; font-size: 30px; font-family: Bungee;" onclick="U3()">U</button>
+	<button id="G3ii" type="button" button class="btn-primary" style="border-radius: 5px; font-size: 30px; font-family: Bungee;" onclick="G3ii()">G</button>
+    <button id="I3" type="button" button class="btn-primary" style="border-radius: 5px; font-size: 30px; font-family: Bungee;" onclick="I3()">I</button>
+	<button type="button" button class="btn-success" style="border-radius: 5px; font-size: 30px; font-family: Bungee;" onclick="SUBMIT3()">SUBMIT</button>
+    </div>
 	</div>
+    <br>
+    <h3 style="text-align: right; font-family: Bungee;"><a href="file:///C:/Users/Dennise/OneDrive/Desktop/comsci%204pics1word/level4.html">Go to the next level!</a></h3>
+    </div>
 	</body>
-</html>
+</html> 
