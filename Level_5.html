@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    
+    <title>Comsci 4-Pics 1-Word</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css">
+   
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bungee&display=swap" rel="stylesheet">
+
+	<script src="https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"></script>
+	<script>
+	var word = "";
+	function F5() {
+        document.getElementById("input5").innerHTML += "F";
+		document.getElementById("F5").style.visibility = "hidden";
+		word += "F";
+		}
+		function A5i() {
+        document.getElementById("input5").innerHTML += "A";
+		document.getElementById("A5i").style.visibility = "hidden";
+		word += "A";
+		}
+		function Y5() {
+        document.getElementById("input5").innerHTML += "Y";
+		document.getElementById("Y5").style.visibility = "hidden";
+		word += "Y";
+		}
+		function N5() {
+        document.getElementById("input5").innerHTML += "N";
+		document.getElementById("N5").style.visibility = "hidden";
+		word += "N";
+		}
+		function A5ii() {
+        document.getElementById("input5").innerHTML += "A";
+		document.getElementById("A5ii").style.visibility = "hidden";
+		word += "A";
+		}
+		function I5() {
+        document.getElementById("input5").innerHTML += "I";
+		document.getElementById("I5").style.visibility = "hidden";
+		word += "I";
+		}
+		function R5i() {
+        document.getElementById("input5").innerHTML += "R";
+		document.getElementById("R5i").style.visibility = "hidden";
+		word += "R";
+		}
+		function O5i() {
+        document.getElementById("input5").innerHTML += "O";
+		document.getElementById("O5i").style.visibility = "hidden";
+		word += "O";
+		}
+		function O5ii() {
+        document.getElementById("input5").innerHTML += "O";
+		document.getElementById("O5ii").style.visibility = "hidden";
+		word += "O";
+		}
+		function C5() {
+        document.getElementById("input5").innerHTML += "C";
+		document.getElementById("C5").style.visibility = "hidden";
+		word += "C";
+		}
+		function R5ii() {
+        document.getElementById("input5").innerHTML += "R";
+		document.getElementById("R5ii").style.visibility = "hidden";
+		word += "R";
+		}
+		function L5() {
+        document.getElementById("input5").innerHTML += "L";
+		document.getElementById("L5").style.visibility = "hidden";
+		word += "L";
+		}
+		function U5() {
+        document.getElementById("input5").innerHTML += "U";
+		document.getElementById("U5").style.visibility = "hidden";
+		word += "U";
+		}
+		function E5() {
+        document.getElementById("input5").innerHTML += "E";
+		document.getElementById("E5").style.visibility = "hidden";
+		word += "E";
+		}
+		function Z5() {
+        document.getElementById("input5").innerHTML += "Z";
+		document.getElementById("Z5").style.visibility = "hidden";
+		word += "Z";
+		}
+		function V5() {
+        document.getElementById("input5").innerHTML += "V";
+		document.getElementById("V5").style.visibility = "hidden";
+		word += "V";
+		}
+		function RESET5() {
+        document.getElementById("input5").innerHTML = "";
+		document.getElementById("F5").style.visibility = "visible";
+		document.getElementById("A5i").style.visibility = "visible";
+		document.getElementById("Y5").style.visibility = "visible";
+		document.getElementById("N5").style.visibility = "visible";
+		document.getElementById("A5ii").style.visibility = "visible";
+		document.getElementById("I5").style.visibility = "visible";
+		document.getElementById("R5i").style.visibility = "visible";
+		document.getElementById("O5i").style.visibility = "visible";
+		document.getElementById("O5ii").style.visibility = "visible";
+		document.getElementById("C5").style.visibility = "visible";
+		document.getElementById("R5ii").style.visibility = "visible";
+		document.getElementById("L5").style.visibility = "visible";
+		document.getElementById("U5").style.visibility = "visible";
+		document.getElementById("E5").style.visibility = "visible";
+		document.getElementById("Z5").style.visibility = "visible";
+		document.getElementById("V5").style.visibility = "visible";
+		word = "";
+		}
+		function SUBMIT5() {
+		if (word == "CARNIVORE") {
+		alert("Congratulations! You have completed the game.");
+		word = "";
+		}
+		else {
+		alert("The word you inputted is wrong. Please try again.");
+		word = "";
+		}
+		}
+	</script>
+  </head>
+  <body>
+  <div>
+	<br>
+	<!--Post the pics below-->
+	
+	<br>
+    <p id="input5"></p>
+    <br>
+    <button id="F5" type="button" onclick="F5()">F</button>
+    <button id="A5i" type="button" onclick="A5i()">A</button>
+    <button id="Y5" type="button" onclick="Y5()">Y</button>
+    <button id="N5" type="button" onclick="N5()">N</button>
+    <button id="A5ii" type="button" onclick="A5ii()">A</button>
+    <button id="I5" type="button" onclick="I5()">I</button>
+    <button id="R5i" type="button" onclick="R5i()">R</button>
+	<button id="O5i" type="button" onclick="O5i()">O</button>
+	<button type="button" onclick="RESET5()">RESET</button>
+	<br>
+    <button id="O5ii" type="button" onclick="O5ii()">O</button>
+    <button id="C5" type="button" onclick="C5()">C</button>
+    <button id="R5ii" type="button" onclick="R5ii()">R</button>
+    <button id="L5" type="button" onclick="L5()">L</button>
+    <button id="U5" type="button" onclick="U5()">U</button>
+    <button id="E5" type="button" onclick="E5()">E</button>
+	<button id="Z5" type="button" onclick="Z5()">Z</button>
+    <button id="V5" type="button" onclick="V5()">V</button>
+	<button type="button" onclick="SUBMIT5()">SUBMIT</button>
+	</div>
+	</body>
+</html>

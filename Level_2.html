@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    
+    <title>Comsci 4-Pics 1-Word</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css">
+   
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bungee&display=swap" rel="stylesheet">
+
+	<script src="https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"></script>
+	<script>
+	var word = "";
+	function H2() {
+        document.getElementById("input2").innerHTML += "H";
+		document.getElementById("H2").style.visibility = "hidden";
+		word += "H";
+		}
+		function R2() {
+        document.getElementById("input2").innerHTML += "R";
+		document.getElementById("R2").style.visibility = "hidden";
+		word += "R";
+		}
+		function E2i() {
+        document.getElementById("input2").innerHTML += "E";
+		document.getElementById("E2i").style.visibility = "hidden";
+		word += "E";
+		}
+		function I2() {
+        document.getElementById("input2").innerHTML += "I";
+		document.getElementById("I2").style.visibility = "hidden";
+		word += "I";
+		}
+		function S2i() {
+        document.getElementById("input2").innerHTML += "S";
+		document.getElementById("S2i").style.visibility = "hidden";
+		word += "S";
+		}
+		function G2() {
+        document.getElementById("input2").innerHTML += "G";
+		document.getElementById("G2").style.visibility = "hidden";
+		word += "G";
+		}
+		function Y2() {
+        document.getElementById("input2").innerHTML += "Y";
+		document.getElementById("Y2").style.visibility = "hidden";
+		word += "Y";
+		}
+		function T2() {
+        document.getElementById("input2").innerHTML += "T";
+		document.getElementById("T2").style.visibility = "hidden";
+		word += "T";
+		}
+		function L2() {
+        document.getElementById("input2").innerHTML += "L";
+		document.getElementById("L2").style.visibility = "hidden";
+		word += "L";
+		}
+		function N2() {
+        document.getElementById("input2").innerHTML += "N";
+		document.getElementById("N2").style.visibility = "hidden";
+		word += "N";
+		}
+		function B2() {
+        document.getElementById("input2").innerHTML += "B";
+		document.getElementById("B2").style.visibility = "hidden";
+		word += "B";
+		}
+		function S2ii() {
+        document.getElementById("input2").innerHTML += "S";
+		document.getElementById("S2ii").style.visibility = "hidden";
+		word += "S";
+		}
+		function J2() {
+        document.getElementById("input2").innerHTML += "J";
+		document.getElementById("J2").style.visibility = "hidden";
+		word += "J";
+		}
+		function A2() {
+        document.getElementById("input2").innerHTML += "A";
+		document.getElementById("A2").style.visibility = "hidden";
+		word += "A";
+		}
+		function E2ii() {
+        document.getElementById("input2").innerHTML += "E";
+		document.getElementById("E2ii").style.visibility = "hidden";
+		word += "E";
+		}
+		function C2() {
+        document.getElementById("input2").innerHTML += "C";
+		document.getElementById("C2").style.visibility = "hidden";
+		word += "C";
+		}
+		function RESET2() {
+        document.getElementById("input2").innerHTML = "";
+		document.getElementById("H2").style.visibility = "visible";
+		document.getElementById("R2").style.visibility = "visible";
+		document.getElementById("E2i").style.visibility = "visible";
+		document.getElementById("I2").style.visibility = "visible";
+		document.getElementById("S2i").style.visibility = "visible";
+		document.getElementById("G2").style.visibility = "visible";
+		document.getElementById("Y2").style.visibility = "visible";
+		document.getElementById("T2").style.visibility = "visible";
+		document.getElementById("L2").style.visibility = "visible";
+		document.getElementById("N2").style.visibility = "visible";
+		document.getElementById("B2").style.visibility = "visible";
+		document.getElementById("S2ii").style.visibility = "visible";
+		document.getElementById("J2").style.visibility = "visible";
+		document.getElementById("A2").style.visibility = "visible";
+		document.getElementById("E2ii").style.visibility = "visible";
+		document.getElementById("Z2").style.visibility = "visible";
+		word = "";
+		}
+		function SUBMIT2() {
+		if (word == "TEACHER") {
+		alert("You have completed level 2. Now onto the next level.");
+		word = "";
+		}
+		else {
+		alert("The word you inputted is wrong. Please try again.");
+		word = "";
+		}
+		}
+	</script>
+  </head>
+  <body>
+  <div>
+	<br>
+	<!--Post the pics below-->
+	
+	<br>
+    <p id="input2"></p>
+    <br>
+    <button id="H2" type="button" onclick="H2()">H</button>
+    <button id="R2" type="button" onclick="R2()">R</button>
+    <button id="E2i" type="button" onclick="E2i()">E</button>
+    <button id="I2" type="button" onclick="I2()">I</button>
+    <button id="S2i" type="button" onclick="S2i()">S</button>
+    <button id="G2" type="button" onclick="G2()">G</button>
+    <button id="Y2" type="button" onclick="Y2()">Y</button>
+	<button id="T2" type="button" onclick="T2()">T</button>
+	<button type="button" onclick="RESET2()">RESET</button>
+	<br>
+    <button id="L2" type="button" onclick="L2()">L</button>
+    <button id="N2" type="button" onclick="N2()">N</button>
+    <button id="B2" type="button" onclick="B2()">B</button>
+    <button id="S2ii" type="button" onclick="S2ii()">S</button>
+    <button id="J2" type="button" onclick="J2()">J</button>
+    <button id="A2" type="button" onclick="A2()">A</button>
+	<button id="E2ii" type="button" onclick="E2ii()">E</button>
+    <button id="C2" type="button" onclick="C2()">C</button>
+	<button type="button" onclick="SUBMIT2()">SUBMIT</button>
+	</div>
+	</body>
+</html>

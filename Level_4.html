@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    
+    <title>Comsci 4-Pics 1-Word</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css">
+   
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bungee&display=swap" rel="stylesheet">
+
+	<script src="https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"></script>
+	<script>
+	var word = "";
+	function U4() {
+        document.getElementById("input4").innerHTML += "U";
+		document.getElementById("U4").style.visibility = "hidden";
+		word += "U";
+		}
+		function O4i() {
+        document.getElementById("input4").innerHTML += "O";
+		document.getElementById("O4i").style.visibility = "hidden";
+		word += "O";
+		}
+		function K4() {
+        document.getElementById("input4").innerHTML += "K";
+		document.getElementById("K4").style.visibility = "hidden";
+		word += "K";
+		}
+		function V4() {
+        document.getElementById("input4").innerHTML += "V";
+		document.getElementById("V4").style.visibility = "hidden";
+		word += "V";
+		}
+		function A4i() {
+        document.getElementById("input4").innerHTML += "A";
+		document.getElementById("A4i").style.visibility = "hidden";
+		word += "A";
+		}
+		function X4() {
+        document.getElementById("input4").innerHTML += "X";
+		document.getElementById("X4").style.visibility = "hidden";
+		word += "X";
+		}
+		function S4i() {
+        document.getElementById("input4").innerHTML += "S";
+		document.getElementById("S4i").style.visibility = "hidden";
+		word += "S";
+		}
+		function S4ii() {
+        document.getElementById("input4").innerHTML += "S";
+		document.getElementById("S4ii").style.visibility = "hidden";
+		word += "S";
+		}
+		function O4ii() {
+        document.getElementById("input4").innerHTML += "O";
+		document.getElementById("O4ii").style.visibility = "hidden";
+		word += "O";
+		}
+		function P4() {
+        document.getElementById("input4").innerHTML += "P";
+		document.getElementById("P4").style.visibility = "hidden";
+		word += "P";
+		}
+		function Oiii4() {
+        document.getElementById("input4").innerHTML += "O";
+		document.getElementById("O4iii").style.visibility = "hidden";
+		word += "O";
+		}
+		function N4() {
+        document.getElementById("input4").innerHTML += "N";
+		document.getElementById("N4").style.visibility = "hidden";
+		word += "N";
+		}
+		function M4() {
+        document.getElementById("input4").innerHTML += "M";
+		document.getElementById("M4").style.visibility = "hidden";
+		word += "M";
+		}
+		function R4() {
+        document.getElementById("input4").innerHTML += "R";
+		document.getElementById("R4").style.visibility = "hidden";
+		word += "R";
+		}
+		function A4ii() {
+        document.getElementById("input4").innerHTML += "A";
+		document.getElementById("A4ii").style.visibility = "hidden";
+		word += "A";
+		}
+		function E4() {
+        document.getElementById("input4").innerHTML += "E";
+		document.getElementById("E4").style.visibility = "hidden";
+		word += "E";
+		}
+		function RESET4() {
+        document.getElementById("input4").innerHTML = "";
+		document.getElementById("U4").style.visibility = "visible";
+		document.getElementById("O4i").style.visibility = "visible";
+		document.getElementById("K4").style.visibility = "visible";
+		document.getElementById("V4").style.visibility = "visible";
+		document.getElementById("A4i").style.visibility = "visible";
+		document.getElementById("X4").style.visibility = "visible";
+		document.getElementById("S4i").style.visibility = "visible";
+		document.getElementById("S4ii").style.visibility = "visible";
+		document.getElementById("O4ii").style.visibility = "visible";
+		document.getElementById("P4").style.visibility = "visible";
+		document.getElementById("O4iii").style.visibility = "visible";
+		document.getElementById("N4").style.visibility = "visible";
+		document.getElementById("M4").style.visibility = "visible";
+		document.getElementById("R4").style.visibility = "visible";
+		document.getElementById("A4ii").style.visibility = "visible";
+		document.getElementById("E4").style.visibility = "visible";
+		word = "";
+		}
+		function SUBMIT4() {
+		if (word == "PRANK") {
+		alert("You have completed level 4. Now onto the final level.");
+		word = "";
+		}
+		else {
+		alert("The word you inputted is wrong. Please try again.");
+		word = "";
+		}
+		}
+	</script>
+  </head>
+  <body>
+  <div>
+	<br>
+	<!--Post the pics below-->
+	
+	<br>
+    <p id="input4"></p>
+    <br>
+    <button id="U4" type="button" onclick="U4()">U</button>
+    <button id="O4i" type="button" onclick="O4i()">O</button>
+    <button id="K4" type="button" onclick="K4()">K</button>
+    <button id="V4" type="button" onclick="V4()">V</button>
+    <button id="A4i" type="button" onclick="A4i()">A</button>
+    <button id="X4" type="button" onclick="X4()">X</button>
+    <button id="S4i" type="button" onclick="S4i()">S</button>
+	<button id="S4ii" type="button" onclick="S4ii()">S</button>
+	<button type="button" onclick="RESET4()">RESET</button>
+	<br>
+    <button id="O4ii" type="button" onclick="O4ii()">O</button>
+    <button id="P4" type="button" onclick="P4()">P</button>
+    <button id="O4iii" type="button" onclick="O4iii()">O</button>
+    <button id="N4" type="button" onclick="N4()">N</button>
+    <button id="M4" type="button" onclick="M4()">M</button>
+    <button id="R4" type="button" onclick="R4()">R</button>
+	<button id="A4ii" type="button" onclick="A4ii()">A</button>
+    <button id="E4" type="button" onclick="E4()">E</button>
+	<button type="button" onclick="SUBMIT4()">SUBMIT</button>
+	</div>
+	</body>
+</html>
