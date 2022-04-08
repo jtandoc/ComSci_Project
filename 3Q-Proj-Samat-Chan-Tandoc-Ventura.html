@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Comsci 4-Pics 1-Word</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css">
+   
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bungee&display=swap" rel="stylesheet">
+
+	<script src="https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"></script>
+	<!--words: carnivore, great, prank, ingredients, teacher-->
+	<script>
+	var word = "";
+	document.getElementById("level2").style.display = "none";
+	document.getElementById("level3").style.display = "none";
+	document.getElementById("level4").style.display = "none";
+	document.getElementById("level5").style.display = "none";
+      function A() {
+        document.getElementById("input").innerHTML += "A";
+		document.getElementById("A").style.visibility = "hidden";
+		word += "A";
+      }
+      function B() {
+        document.getElementById("input").innerHTML += "B";
+		document.getElementById("B").style.visibility = "hidden";
+		word += "B";
+      }
+      function C() {
+        document.getElementById("input").innerHTML += "C";
+		document.getElementById("C").style.visibility = "hidden";
+		word += "C";
+      }
+      function D() {
+        document.getElementById("input").innerHTML += "D";
+		document.getElementById("D").style.visibility = "hidden";
+		word += "D";
+      }
+      function E() {
+        document.getElementById("input").innerHTML += "E";
+		document.getElementById("E").style.visibility = "hidden";
+		word += "E";
+      }
+      function F() {
+        document.getElementById("input").innerHTML += "F";
+		document.getElementById("F").style.visibility = "hidden";
+		word += "F";
+      }
+      function G() {
+        document.getElementById("input").innerHTML += "G";
+		document.getElementById("G").style.visibility = "hidden";
+		word += "G";
+      }
+	  function H() {
+        document.getElementById("input").innerHTML += "H";
+		document.getElementById("H").style.visibility = "hidden";
+		word += "H";
+      }
+	  function I() {
+        document.getElementById("input").innerHTML += "I";
+		document.getElementById("I").style.visibility = "hidden";
+		word += "I";
+      }
+	  function J() {
+        document.getElementById("input").innerHTML += "J";
+		document.getElementById("J").style.visibility = "hidden";
+		word += "J";
+      }
+	  function K() {
+        document.getElementById("input").innerHTML += "K";
+		document.getElementById("K").style.visibility = "hidden";
+		word += "K";
+      }
+	  function L() {
+        document.getElementById("input").innerHTML += "L";
+		document.getElementById("L").style.visibility = "hidden";
+		word += "L";
+      }
+	  function M() {
+        document.getElementById("input").innerHTML += "M";
+		document.getElementById("M").style.visibility = "hidden";
+		word += "M";
+      }
+	  function N() {
+        document.getElementById("input").innerHTML += "N";
+		document.getElementById("N").style.visibility = "hidden";
+		word += "N";
+      }
+	  function O() {
+        document.getElementById("input").innerHTML += "O";
+		document.getElementById("O").style.visibility = "hidden";
+		word += "O";
+      }
+	  function P() {
+        document.getElementById("input").innerHTML += "P";
+		document.getElementById("P").style.visibility = "hidden";
+		word += "P";
+      }
+	  function Q() {
+        document.getElementById("input").innerHTML += "Q";
+		document.getElementById("Q").style.visibility = "hidden";
+		word += "Q";
+      }
+	  function R() {
+        document.getElementById("input").innerHTML += "R";
+		document.getElementById("R").style.visibility = "hidden";
+		word += "R";
+      }
+	  function S() {
+        document.getElementById("input").innerHTML += "S";
+		document.getElementById("S").style.visibility = "hidden";
+		word += "S";
+      }
+	  function T() {
+        document.getElementById("input").innerHTML += "T";
+		document.getElementById("T").style.visibility = "hidden";
+		word += "T";
+      }
+	  function U() {
+        document.getElementById("input").innerHTML += "U";
+		document.getElementById("U").style.visibility = "hidden";
+		word += "U";
+      }
+	  function V() {
+        document.getElementById("input").innerHTML += "V";
+		document.getElementById("V").style.visibility = "hidden";
+		word += "V";
+      }
+	  function W() {
+        document.getElementById("input").innerHTML += "W";
+		document.getElementById("W").style.visibility = "hidden";
+		word += "W";
+      }
+	  function X() {
+        document.getElementById("input").innerHTML += "X";
+		document.getElementById("X").style.visibility = "hidden";
+		word += "X";
+      }
+	  function Y() {
+        document.getElementById("input").innerHTML += "Y";
+		document.getElementById("Y").style.visibility = "hidden";
+		word += "Y";
+      }
+	  function Z() {
+        document.getElementById("input").innerHTML += "Z";
+		document.getElementById("Z").style.visibility = "hidden";
+		word += "Z";
+      }
+	  function RESET() {
+        document.getElementById("input").innerHTML = "";
+		document.getElementById("A").style.visibility = "visible";
+		document.getElementById("B").style.visibility = "visible";
+		document.getElementById("C").style.visibility = "visible";
+		document.getElementById("D").style.visibility = "visible";
+		document.getElementById("E").style.visibility = "visible";
+		document.getElementById("F").style.visibility = "visible";
+		document.getElementById("G").style.visibility = "visible";
+		document.getElementById("H").style.visibility = "visible";
+		document.getElementById("I").style.visibility = "visible";
+		document.getElementById("J").style.visibility = "visible";
+		document.getElementById("K").style.visibility = "visible";
+		document.getElementById("L").style.visibility = "visible";
+		document.getElementById("M").style.visibility = "visible";
+		document.getElementById("N").style.visibility = "visible";
+		document.getElementById("O").style.visibility = "visible";
+		document.getElementById("P").style.visibility = "visible";
+		document.getElementById("Q").style.visibility = "visible";
+		document.getElementById("R").style.visibility = "visible";
+		document.getElementById("S").style.visibility = "visible";
+		document.getElementById("T").style.visibility = "visible";
+		document.getElementById("U").style.visibility = "visible";
+		document.getElementById("V").style.visibility = "visible";
+		document.getElementById("W").style.visibility = "visible";
+		document.getElementById("X").style.visibility = "visible";
+		document.getElementById("Y").style.visibility = "visible";
+		document.getElementById("Z").style.visibility = "visible";
+		word = "";
+      }
+	  
+    </script>
+  </head>
+  <body>
+	<div id="level1">
+	<br>
+	<!--Post the pics below-->
+	
+	<br>
+    <p id="input"></p>
+    <br>
+    <button id="W" type="button" onclick="W()">W</button>
+    <button id="D" type="button" onclick="D()">D</button>
+    <button id="R" type="button" onclick="R()">R</button>
+    <button id="I" type="button" onclick="I()">I</button>
+    <button id="S" type="button" onclick="S()">S</button>
+    <button id="O" type="button" onclick="O()">O</button>
+    <button id="C" type="button" onclick="C()">C</button>
+	<button id="T" type="button" onclick="T()">T</button>
+	<button type="button" onclick="RESET()">RESET</button>
+	<br>
+    <button id="A" type="button" onclick="A()">A</button>
+    <button id="N" type="button" onclick="N()">N</button>
+    <button id="B" type="button" onclick="B()">B</button>
+    <button id="S" type="button" onclick="S()">S</button>
+    <button id="G" type="button" onclick="G()">G</button>
+    <button id="E" type="button" onclick="E()">E</button>
+	<button id="I" type="button" onclick="I()">I</button>
+    <button id="E" type="button" onclick="E()">E</button>
+	<button type="button" onclick="SUBMIT1()">SUBMIT</button>
+	</div>
+	<div id="level2">
+	<br>
+	<!--Post the pics below-->
+	
+	<br>
+    <p id="input"></p>
+    <br>
+    <button id="H" type="button" onclick="H()">H</button>
+    <button id="R" type="button" onclick="R()">R</button>
+    <button id="E" type="button" onclick="E()">E</button>
+    <button id="I" type="button" onclick="I()">I</button>
+    <button id="S" type="button" onclick="S()">S</button>
+    <button id="G" type="button" onclick="G()">G</button>
+    <button id="Y" type="button" onclick="Y()">Y</button>
+	<button id="T" type="button" onclick="T()">T</button>
+	<button type="button" onclick="RESET()">RESET</button>
+	<br>
+    <button id="L" type="button" onclick="L()">L</button>
+    <button id="N" type="button" onclick="N()">N</button>
+    <button id="B" type="button" onclick="B()">B</button>
+    <button id="S" type="button" onclick="S()">S</button>
+    <button id="J" type="button" onclick="J()">J</button>
+    <button id="A" type="button" onclick="A()">A</button>
+	<button id="E" type="button" onclick="E()">E</button>
+    <button id="C" type="button" onclick="C()">C</button>
+	<button type="button" onclick="SUBMIT2()">SUBMIT</button>
+	</div>
+	<div id="level3">
+	<br>
+	<!--Post the pics below-->
+	
+	<br>
+    <p id="input"></p>
+    <br>
+    <button id="T" type="button" onclick="T()">T</button>
+    <button id="B" type="button" onclick="B()">B</button>
+    <button id="R" type="button" onclick="R()">R</button>
+    <button id="A" type="button" onclick="A()">A</button>
+    <button id="S" type="button" onclick="S()">S</button>
+    <button id="Q" type="button" onclick="Q()">Q</button>
+    <button id="O" type="button" onclick="O()">O</button>
+	<button id="H" type="button" onclick="H()">H</button>
+	<button type="button" onclick="RESET()">RESET</button>
+	<br>
+    <button id="E" type="button" onclick="E()">E</button>
+    <button id="R" type="button" onclick="R()">R</button>
+    <button id="G" type="button" onclick="G()">G</button>
+    <button id="S" type="button" onclick="S()">S</button>
+    <button id="Q" type="button" onclick="Q()">Q</button>
+    <button id="U" type="button" onclick="U()">U</button>
+	<button id="G" type="button" onclick="G()">G</button>
+    <button id="I" type="button" onclick="I()">I</button>
+	<button type="button" onclick="SUBMIT3()">SUBMIT</button>
+	</div>
+	<div id="level4">
+	<br>
+	<!--Post the pics below-->
+	
+	<br>
+    <p id="input"></p>
+    <br>
+    <button id="U" type="button" onclick="U()">U</button>
+    <button id="O" type="button" onclick="O()">O</button>
+    <button id="K" type="button" onclick="K()">K</button>
+    <button id="V" type="button" onclick="V()">V</button>
+    <button id="A" type="button" onclick="A()">A</button>
+    <button id="X" type="button" onclick="X()">X</button>
+    <button id="S" type="button" onclick="S()">S</button>
+	<button id="S" type="button" onclick="S()">S</button>
+	<button type="button" onclick="RESET()">RESET</button>
+	<br>
+    <button id="O" type="button" onclick="O()">O</button>
+    <button id="P" type="button" onclick="P()">P</button>
+    <button id="O" type="button" onclick="O()">O</button>
+    <button id="N" type="button" onclick="N()">N</button>
+    <button id="M" type="button" onclick="M()">M</button>
+    <button id="R" type="button" onclick="R()">R</button>
+	<button id="A" type="button" onclick="A()">A</button>
+    <button id="E" type="button" onclick="E()">E</button>
+	<button type="button" onclick="SUBMIT4()">SUBMIT</button>
+	</div>
+	<div id="level5">
+	<br>
+	<!--Post the pics below-->
+	
+	<br>
+    <p id="input"></p>
+    <br>
+    <button id="F" type="button" onclick="F()">F</button>
+    <button id="A" type="button" onclick="A()">A</button>
+    <button id="Y" type="button" onclick="Y()">Y</button>
+    <button id="N" type="button" onclick="N()">N</button>
+    <button id="A" type="button" onclick="A()">A</button>
+    <button id="I" type="button" onclick="I()">I</button>
+    <button id="R" type="button" onclick="R()">R</button>
+	<button id="O" type="button" onclick="O()">O</button>
+	<button type="button" onclick="RESET()">RESET</button>
+	<br>
+    <button id="O" type="button" onclick="O()">O</button>
+    <button id="C" type="button" onclick="C()">C</button>
+    <button id="U" type="button" onclick="U()">U</button>
+    <button id="L" type="button" onclick="L()">L</button>
+    <button id="U" type="button" onclick="U()">U</button>
+    <button id="E" type="button" onclick="E()">E</button>
+	<button id="Z" type="button" onclick="Z()">Z</button>
+    <button id="V" type="button" onclick="V()">V</button>
+	<button type="button" onclick="SUBMIT5()">SUBMIT</button>
+	</div>
+  </body>
+</html>
