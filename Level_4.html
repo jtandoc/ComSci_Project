@@ -2,10 +2,10 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8">
-    
-    <title>Comsci 4-Pics 1-Word</title>
+
+    <title>4 Images 1 Term: Level 4</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css">
-   
+
 	<link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Bungee&display=swap" rel="stylesheet">
@@ -128,32 +128,49 @@
 	</script>
   </head>
   <body>
-  <div>
+    <div class="container" style="background-color: #98c1d9; padding-bottom: 20px; padding-top: 20px;">
+        <div id="intro">
+            <h1 style="text-align:center; font-family: Bungee;">Welcome to 4 Images 1 Term!</h1>
+            <h3 style="text-align:center; font-family: Bungee;">Rules are simple: Guess the correct term using the images as hints!</h3>
+            <br>
+            <h2 style="text-align:center; font-family: Bungee;">Level 4</h2>
+        </div>
+  <div id="level4" style="padding-left: 100px; padding-right: 100px;">
 	<br>
 	<!--Post the pics below-->
-	
-	<br>
-    <p id="input4"></p>
+    <div id="images" style="padding-left: 50px">
+    <img src="https://i.insider.com/602ee9ced3ad27001837f2ac?width=750&format=jpeg&auto=webp" alt="rick astley" style="width:200px; height:200px; object-fit: cover; border-radius: 10px;">
+	<img src="https://metro.co.uk/wp-content/uploads/2016/04/dte3ey.jpg?quality=90&strip=all" alt="april 1" style="width:200px; height:200px; object-fit: cover; border-radius: 10px;">
+	<img src="https://thumbs.dreamstime.com/b/whoopee-cushion-whoopee-cushion-isolated-against-white-background-150983135.jpg" alt="whoopee cushion" style="width:200px; height:200px; object-fit: cover; border-radius: 10px;">
+	<img src="https://cf.shopee.ph/file/0e9f0507497f0d610859308c1edc08c0" alt="fake bubblegum" style="width:200px; height:200px; object-fit: cover; border-radius: 10px;">
+    </div>
     <br>
-    <button id="U4" type="button" onclick="U4()">U</button>
-    <button id="O4i" type="button" onclick="O4i()">O</button>
-    <button id="K4" type="button" onclick="K4()">K</button>
-    <button id="V4" type="button" onclick="V4()">V</button>
-    <button id="A4i" type="button" onclick="A4i()">A</button>
-    <button id="X4" type="button" onclick="X4()">X</button>
-    <button id="S4i" type="button" onclick="S4i()">S</button>
-	<button id="S4ii" type="button" onclick="S4ii()">S</button>
-	<button type="button" onclick="RESET4()">RESET</button>
+    <h4 style="text-align:center; font-family: Bungee;">Hint: This word has 5 letters!</h4>
+    <p id="input4" style="min-height: 55px; background-color: #e0fbfc; padding: 5px; border-radius: 10px; font-size: 30px; font-family: Bungee;"></p>
+    <div id="keyboard" style="padding-left: 250px;">
+    <button id="U4" type="button" button class="btn-primary" style="border-radius: 5px; font-size: 30px; font-family: Bungee;" onclick="U4()">U</button>
+    <button id="O4i" type="button" button class="btn-primary" style="border-radius: 5px; font-size: 30px; font-family: Bungee;" onclick="O4i()">O</button>
+    <button id="K4" type="button" button class="btn-primary" style="border-radius: 5px; font-size: 30px; font-family: Bungee;" onclick="K4()">K</button>
+    <button id="V4" type="button" button class="btn-primary" style="border-radius: 5px; font-size: 30px; font-family: Bungee;" onclick="V4()">V</button>
+    <button id="A4i" type="button" button class="btn-primary" style="border-radius: 5px; font-size: 30px; font-family: Bungee;" onclick="A4i()">A</button>
+    <button id="X4" type="button" button class="btn-primary" style="border-radius: 5px; font-size: 30px; font-family: Bungee;" onclick="X4()">X</button>
+    <button id="S4i" type="button" button class="btn-primary" style="border-radius: 5px; font-size: 30px; font-family: Bungee;" onclick="S4i()">S</button>
+	<button id="S4ii" type="button" button class="btn-primary" style="border-radius: 5px; font-size: 30px; font-family: Bungee;" onclick="S4ii()">S</button>
+	<button type="button" button class="btn-danger" style="border-radius: 5px; font-size: 30px; font-family: Bungee;" onclick="RESET4()">RESET</button>
 	<br>
-    <button id="O4ii" type="button" onclick="O4ii()">O</button>
-    <button id="P4" type="button" onclick="P4()">P</button>
-    <button id="O4iii" type="button" onclick="O4iii()">O</button>
-    <button id="N4" type="button" onclick="N4()">N</button>
-    <button id="M4" type="button" onclick="M4()">M</button>
-    <button id="R4" type="button" onclick="R4()">R</button>
-	<button id="A4ii" type="button" onclick="A4ii()">A</button>
-    <button id="E4" type="button" onclick="E4()">E</button>
-	<button type="button" onclick="SUBMIT4()">SUBMIT</button>
+    <button id="O4ii" type="button" button class="btn-primary" style="border-radius: 5px; font-size: 30px; font-family: Bungee;" onclick="O4ii()">O</button>
+    <button id="P4" type="button" button class="btn-primary" style="border-radius: 5px; font-size: 30px; font-family: Bungee;" onclick="P4()">P</button>
+    <button id="O4iii" type="button" button class="btn-primary" style="border-radius: 5px; font-size: 30px; font-family: Bungee;" onclick="O4iii()">O</button>
+    <button id="N4" type="button" button class="btn-primary" style="border-radius: 5px; font-size: 30px; font-family: Bungee;" onclick="N4()">N</button>
+    <button id="M4" type="button" button class="btn-primary" style="border-radius: 5px; font-size: 30px; font-family: Bungee;" onclick="M4()">M</button>
+    <button id="R4" type="button" button class="btn-primary" style="border-radius: 5px; font-size: 30px; font-family: Bungee;" onclick="R4()">R</button>
+	<button id="A4ii" type="button" button class="btn-primary" style="border-radius: 5px; font-size: 30px; font-family: Bungee;" onclick="A4ii()">A</button>
+    <button id="E4" type="button" button class="btn-primary" style="border-radius: 5px; font-size: 30px; font-family: Bungee;" onclick="E4()">E</button>
+	<button type="button" button class="btn-success" style="border-radius: 5px; font-size: 30px; font-family: Bungee;" onclick="SUBMIT4()">SUBMIT</button>
+    </div>
 	</div>
+    <br>
+    <h3 style="text-align: right; font-family: Bungee;"><a href="file:///C:/Users/Dennise/OneDrive/Desktop/comsci%204pics1word/level5.html">Go to the next level!</a></h3>
+    </div>
 	</body>
-</html>
+</html> 
