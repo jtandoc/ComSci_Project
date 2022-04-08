@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8">
     
-    <title>Comsci 4-Pics 1-Word</title>
+    <title>4 Images 1 Term: Level 1</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css">
    
 	<link rel="preconnect" href="https://fonts.googleapis.com">
@@ -128,32 +128,49 @@
 	</script>
   </head>
   <body>
-  <div>
+    <div class="container" style="background-color: #98c1d9; padding-bottom: 20px; padding-top: 20px;">
+        <div id="intro">
+            <h1 style="text-align:center; font-family: Bungee;">Welcome to 4 Images 1 Term!</h1>
+            <h3 style="text-align:center; font-family: Bungee;">Rules are simple: Guess the correct term using the images as hints!</h3>
+            <br>
+            <h2 style="text-align:center; font-family: Bungee;">Level 1</h2>
+        </div>
+  <div id="level1" style="padding-left: 100px; padding-right: 100px;">
 	<br>
 	<!--Post the pics below-->
-	
-	<br>
-    <p id="input1"></p>
+    <div id="images" style="padding-left: 50px">
+	<img src="https://www.seriouseats.com/thmb/1Tl-bBEgEnFwD_bSxF4BOWNixPs=/450x0/filters:no_upscale():max_bytes(150000):strip_icc()/__opt__aboutcom__coeus__resources__content_migration__serious_eats__seriouseats.com__2020__12__20201203-indonesian-pantry-vicky-wasik-1-b827da1c26134cf18153da281f8efb19.jpg" alt="food ingredient" style="width:200px; height:200px; object-fit: cover; border-radius: 10px;">
+	<img src="https://assets.bonappetit.com/photos/5cca15dd0c29c45d130bb389/master/w_4000,h_3200,c_limit/turkish-cookbook-4.jpg" alt="cookbook" style="width:200px; height:200px; border-radius: 10px;">
+	<img src="https://www.byrdie.com/thmb/_QbSeXAbxsj-TtHZTYCiAFQlMlQ=/3981x2986/smart/filters:no_upscale()/bundo-kim-ur2zmbseUIA-unsplash-067ba1b3cb584959acc18b8b64f87943.jpg" alt="perfume ingredients" style="width:200px; height:200px; object-fit: cover; border-radius: 10px;">
+	<img src="https://www.rrp.com.au/wp-content/uploads/2021/01/chemical-management.jpg" alt="chemistry ingredients" style="width:200px; height:200px; object-fit: cover; border-radius: 10px;">
+    </div>
     <br>
-    <button id="W1" type="button" onclick="W1()">W</button>
-    <button id="D1" type="button" onclick="D1()">D</button>
-    <button id="R1" type="button" onclick="R1()">R</button>
-    <button id="I1i" type="button" onclick="I1i()">I</button>
-    <button id="N1i" type="button" onclick="N1i()">N</button>
-    <button id="O1" type="button" onclick="O1()">O</button>
-    <button id="C1" type="button" onclick="C1()">C</button>
-	<button id="T1" type="button" onclick="T1()">T</button>
-	<button type="button" onclick="RESET1()">RESET</button>
+    <h4 style="text-align:center; font-family: Bungee;">Hint: This word has 11 letters!</h4>
+    <p id="input1" style="min-height: 55px; background-color: #e0fbfc; padding: 5px; border-radius: 10px; font-size: 30px; font-family: Bungee;"></p>
+    <div id="keyboard" style="padding-left: 250px;">
+    <button id="W1" type="button" button class="btn-primary" style="border-radius: 5px; font-size: 30px; font-family: Bungee;" onclick="W1()">W</button>
+    <button id="D1" type="button" button class="btn-primary" style="border-radius: 5px; font-size: 30px; font-family: Bungee;" onclick="D1()">D</button>
+    <button id="R1" type="button" button class="btn-primary" style="border-radius: 5px; font-size: 30px; font-family: Bungee;" onclick="R1()">R</button>
+    <button id="I1i" type="button" button class="btn-primary" style="border-radius: 5px; font-size: 30px; font-family: Bungee;" onclick="I1i()">I</button>
+    <button id="N1i" type="button" button class="btn-primary" style="border-radius: 5px; font-size: 30px; font-family: Bungee;" onclick="N1i()">N</button>
+    <button id="O1" type="button" button class="btn-primary" style="border-radius: 5px; font-size: 30px; font-family: Bungee;" onclick="O1()">O</button>
+    <button id="C1" type="button" button class="btn-primary" style="border-radius: 5px; font-size: 30px; font-family: Bungee;" onclick="C1()">C</button>
+	<button id="T1" type="button" button class="btn-primary" style="border-radius: 5px; font-size: 30px; font-family: Bungee;" onclick="T1()">T</button>
+	<button type="button" button class="btn-danger" style="border-radius: 5px; font-size: 30px; font-family: Bungee;" onclick="RESET1()">RESET</button>
 	<br>
-    <button id="A1" type="button" onclick="A1()">A</button>
-    <button id="N1ii" type="button" onclick="N1ii()">N</button>
-    <button id="B1" type="button" onclick="B1()">B</button>
-    <button id="S1" type="button" onclick="S1()">S</button>
-    <button id="G1" type="button" onclick="G1()">G</button>
-    <button id="E1i" type="button" onclick="E1i()">E</button>
-	<button id="I1ii" type="button" onclick="I1ii()">I</button>
-    <button id="E1ii" type="button" onclick="E1ii()">E</button>
-	<button type="button" onclick="SUBMIT1()">SUBMIT</button>
-	</div>
+    <button id="A1" type="button" button class="btn-primary" style="border-radius: 5px; font-size: 30px; font-family: Bungee;" onclick="A1()">A</button>
+    <button id="N1ii" type="button" button class="btn-primary" style="border-radius: 5px; font-size: 30px; font-family: Bungee;" onclick="N1ii()">N</button>
+    <button id="B1" type="button" button class="btn-primary" style="border-radius: 5px; font-size: 30px; font-family: Bungee;" onclick="B1()">B</button>
+    <button id="S1" type="button" button class="btn-primary" style="border-radius: 5px; font-size: 30px; font-family: Bungee;" onclick="S1()">S</button>
+    <button id="G1" type="button" button class="btn-primary" style="border-radius: 5px; font-size: 30px; font-family: Bungee;" onclick="G1()">G</button>
+    <button id="E1i" type="button" button class="btn-primary" style="border-radius: 5px; font-size: 30px; font-family: Bungee;" onclick="E1i()">E</button>
+	<button id="I1ii" type="button" button class="btn-primary" style="border-radius: 5px; font-size: 30px; font-family: Bungee;" onclick="I1ii()">I</button>
+    <button id="E1ii" type="button" button class="btn-primary" style="border-radius: 5px; font-size: 30px; font-family: Bungee;" onclick="E1ii()">E</button>
+	<button type="button" button class="btn-success" style="border-radius: 5px; font-size: 30px; font-family: Bungee;" onclick="SUBMIT1()">SUBMIT</button>
+    </div>
+    </div>
+	<br>
+    <h3 style="text-align: right; font-family: Bungee;"><a href="file:///C:/Users/Dennise/OneDrive/Desktop/comsci%204pics1word/level2.html">Go to the next level!</a></h3>
+    </div>
 	</body>
 </html>
